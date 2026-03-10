@@ -1,56 +1,40 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "赵翠娜｜产品经理 / 交互设计"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+**简介**
+产品经理（AIGC/医疗健康方向），工业设计与交互设计背景。具备多模态内容生产、模型评估体系搭建、数据驱动策略迭代与跨团队协作经验。
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+**联系**
+- 邮箱：2539152011@qq.com
+- 手机：159-3268-8722（微信同号）
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+**教育经历**
+- 浙江大学｜工业设计工程 硕士（保研）｜GPA 3.82/4.0（Top 5%）。发表 SCI 核心论文 1 篇、EI 核心会议论文 2 篇；2 项发明专利；国际设计大奖 2 项（美国 Muse、IDA）；国家级奖励 1 项；优秀研究生。
+- 河北农业大学｜工业设计 本科（国家教育部卓越工程师）｜GPA 3.88/4.0｜排名 1/55。国家奖学金；连续 4 年专业第 1（全系前 3%）；全国智能机器人大赛国家级一等奖（负责人）；“互联网+”国家级二等奖及其他国家级奖励 4 项；省部级奖项 8 项。
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+**实习经历**
+- 百度｜健康 AI 应用产品部｜AIGC 产品经理。负责多模态 AI 内容生产（文生图/图生图/图生文/文生视频/图生视频），搭建健康领域素材库，支撑“健康百看”“医生 AI 数字人”等业务。设计并落地 Q3 素材库规模化建设方案，素材总量 48 万 → 100 万，Top5 结果覆盖率提升至 92%。0-1 构建图片理解操作中台，输出 25+ 页高保真原型与完整 PRD。建立模型评估与迭代机制，图片理解模型关键指标达：标题准确率 92.1%、描述准确率 84.6%、分类准确率 91.3%、标签准确率 94.3%，支撑 240 万张素材规模。
+- 滴滴｜小桔能源事业部｜产品实习生。主导小桔充电 App/小程序首页导购策略优化，8 维度决策因子建模，覆盖 62 城 8000+ 充电站，首页点击率 +13%，整体完单转化率 +6pp。通过 AB 实验完成 8 轮迭代，策略周期 14 天压缩至 5 天；数据看板实时归因 12 项指标，输出 20+ 份报告驱动调优，新用户次日留存 +13%。设计“价差/免费停车/空闲”等多因子权重算法，推动 6 项功能上线，功能采纳率 >85%。
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+**项目经历**
+- 蚂蚁集团｜支付宝事业部｜AI 校园生态产品（2024.11–2024.12）。基于 KANO 与 JTBD 定位校园效率痛点，完成 300+ 问卷与 49 场深访。以 LSTM 智能日程、知识图谱活动推荐、POI×营养学饮食 Agent 组合方案完成 MVP，开发周期压缩 50%。方案获事业部创新银奖（Top 15%），纳入 2025 Q1 迭代参考。
+- 美团｜大众点评笔记事业部｜内容运营。负责杭州站官方账号内容策划与设计，产出 10+ 运营贴。基于用户行为漏斗与 AB 测试优化内容推荐策略。
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+**技能**
+- 原型与设计：Axure、Sketch、Figma、PS、Pr、XD、Rhino、C4D、Unity
+- 数据与分析：Excel、SQL、Python（基础）、数据看板与指标归因
+- 研究方法：用户研究、行为数据分析、KANO/JTBD
+- AI 工具：Midjourney、Stable Diffusion
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+**作品集**
+- 研究生作品集（2023–2024）：[下载](/files/portfolio-grad.pdf)
+- 本科作品集（2020–2023）：[下载](/files/portfolio-undergrad.pdf)
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
-
-**Markdown generator**
-
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
-
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
-
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
-
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+**简历下载**
+- PDF 简历：[下载](/files/resume.pdf)

@@ -1,7 +1,9 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "研究生作品集（2023–2024）"
+excerpt: "医疗健康方向交互与产品设计案例集<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+本作品集聚焦医疗健康与交互设计方向的产品与研究案例，包含康复训练交互系统、数据可视化交互等项目。
+
+下载：[研究生作品集](/files/portfolio-grad.pdf)

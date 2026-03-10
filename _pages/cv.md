@@ -1,6 +1,6 @@
 ---
-layout: archive
-title: "CV"
+layout: single
+title: "简历"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,56 +9,38 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+**基本信息**
+- 姓名：赵翠娜
+- 学历：硕士（浙江大学）
+- 方向：AIGC 产品经理 / 交互与工业设计
+- 邮箱：2539152011@qq.com
+- 手机：159-3268-8722（微信同号）
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+**教育经历**
+- 浙江大学｜工业设计工程 硕士（保研）｜GPA 3.82/4.0（Top 5%）。发表 SCI 核心论文 1 篇、EI 核心会议论文 2 篇；2 项发明专利；国际设计大奖 2 项（美国 Muse、IDA）；国家级奖励 1 项；优秀研究生。
+- 河北农业大学｜工业设计 本科（国家教育部卓越工程师）｜GPA 3.88/4.0｜排名 1/55。国家奖学金；连续 4 年专业第 1（全系前 3%）；全国智能机器人大赛国家级一等奖（负责人）；“互联网+”国家级二等奖及其他国家级奖励 4 项；省部级奖项 8 项。
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+**实习经历**
+- 百度｜健康 AI 应用产品部｜AIGC 产品经理。负责多模态 AI 内容生产（文生图/图生图/图生文/文生视频/图生视频），搭建健康领域素材库，支撑“健康百看”“医生 AI 数字人”等业务。设计并落地 Q3 素材库规模化建设方案，素材总量 48 万 → 100 万，Top5 结果覆盖率提升至 92%。0-1 构建图片理解操作中台，输出 25+ 页高保真原型与完整 PRD。建立模型评估与迭代机制，图片理解模型关键指标达：标题准确率 92.1%、描述准确率 84.6%、分类准确率 91.3%、标签准确率 94.3%，支撑 240 万张素材规模。
+- 滴滴｜小桔能源事业部｜产品实习生。主导小桔充电 App/小程序首页导购策略优化，8 维度决策因子建模，覆盖 62 城 8000+ 充电站，首页点击率 +13%，整体完单转化率 +6pp。通过 AB 实验完成 8 轮迭代，策略周期 14 天压缩至 5 天；数据看板实时归因 12 项指标，输出 20+ 份报告驱动调优，新用户次日留存 +13%。设计“价差/免费停车/空闲”等多因子权重算法，推动 6 项功能上线，功能采纳率 >85%。
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+**项目经历**
+- 蚂蚁集团｜支付宝事业部｜AI 校园生态产品（2024.11–2024.12）。基于 KANO 与 JTBD 定位校园效率痛点，完成 300+ 问卷与 49 场深访。以 LSTM 智能日程、知识图谱活动推荐、POI×营养学饮食 Agent 组合方案完成 MVP，开发周期压缩 50%。方案获事业部创新银奖（Top 15%），纳入 2025 Q1 迭代参考。
+- 美团｜大众点评笔记事业部｜内容运营。负责杭州站官方账号内容策划与设计，产出 10+ 运营贴。基于用户行为漏斗与 AB 测试优化内容推荐策略。
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+**论文 / 专利 / 奖项**
+- SCI 核心论文 1 篇；EI 核心会议论文 2 篇
+- 发明专利 2 项
+- 国际设计大奖 2 项（美国 Muse、IDA）
+- 国家级奖励 1 项；省部级奖项 8 项
+
+**技能**
+- 原型与设计：Axure、Sketch、Figma、PS、Pr、XD、Rhino、C4D、Unity
+- 数据与分析：Excel、SQL、Python（基础）、数据看板与指标归因
+- 研究方法：用户研究、行为数据分析、KANO/JTBD
+- AI 工具：Midjourney、Stable Diffusion
+
+**作品集与下载**
+- 研究生作品集（2023–2024）：[下载](/files/portfolio-grad.pdf)
+- 本科作品集（2020–2023）：[下载](/files/portfolio-undergrad.pdf)
+- PDF 简历：[下载](/files/resume.pdf)
