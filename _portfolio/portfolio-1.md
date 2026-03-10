@@ -1,6 +1,6 @@
 ---
 title: "研究生作品集（2023–2024）"
-excerpt: "医疗健康方向交互与产品设计案例集<br/><img src='/images/500x300.png'>"
+excerpt: "医疗健康方向交互与产品设计案例集<br/><img src='/images/bio-photo.jpg'>"
 collection: portfolio
 ---
 
