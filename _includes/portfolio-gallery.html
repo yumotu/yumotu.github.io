@@ -1,0 +1,16 @@
+{% assign gallery_id = include.id | default: 'gallery' %}
+{% assign label = include.label | default: '作品集' %}
+{% assign prefix = include.prefix | default: 'grad' %}
+{% assign count = include.count | default: 0 %}
+
+<div class="portfolio-gallery" id="{{ gallery_id }}">
+  <h3 class="portfolio-gallery__title">{{ label }}</h3>
+  <div class="portfolio-gallery__grid">
+    {% for i in (1..count) %}
+      {% assign idx = i | prepend: '000' | slice: -3, 3 %}
+      <button class="portfolio-gallery__item" type="button" data-index="{{ i }}" data-prefix="{{ prefix }}" aria-label="查看第 {{ i }} 页">
+        <img src="{{ base_path }}/images/portfolio/thumbs/{{ prefix }}-{{ idx }}.jpg" alt="{{ label }} 第 {{ i }} 页缩略图" loading="lazy">
+      </button>
+    {% endfor %}
+  </div>
+</div>

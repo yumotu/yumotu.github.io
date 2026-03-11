@@ -5,12 +5,93 @@ permalink: /portfolio/
 author_profile: true
 ---
 
-<p><strong>研究生作品集（2023–2024）</strong></p>
-<p><img src="{{ site.baseurl }}/images/portfolio/grad-collage.jpg" alt="研究生作品集拼图"></p>
-<p>本作品集聚焦医疗健康与交互设计方向的产品与研究案例，包含康复训练交互系统、数据可视化交互等项目。</p>
-<p><a href="{{ site.baseurl }}/files/portfolio-grad.pdf">下载研究生作品集</a></p>
+{% include base_path %}
 
-<p><strong>本科作品集（2020–2023）</strong></p>
-<p><img src="{{ site.baseurl }}/images/portfolio/undergrad-page2.jpg" alt="本科作品集示例"></p>
-<p>包含消防与公共安全、疫情防护产品、用户行为研究等项目案例。</p>
-<p><a href="{{ site.baseurl }}/files/portfolio-undergrad.pdf">下载本科作品集</a></p>
+本作品集聚焦医疗健康与交互设计方向的产品与研究案例，包含康复训练交互系统、数据可视化交互等项目。  
+下载：[研究生作品集]({{ base_path }}/files/portfolio-grad.pdf)
+
+{% include portfolio-gallery.html id="gallery-grad" label="研究生作品集（2023–2024）" prefix="grad" count=22 %}
+
+包含消防与公共安全、疫情防护产品、用户行为研究等项目案例。  
+下载：[本科作品集]({{ base_path }}/files/portfolio-undergrad.pdf)
+
+{% include portfolio-gallery.html id="gallery-undergrad" label="本科作品集（2020–2023）" prefix="undergrad" count=36 %}
+
+<div class="portfolio-lightbox" id="portfolio-lightbox" aria-hidden="true">
+  <div class="portfolio-lightbox__content">
+    <button class="portfolio-lightbox__close" type="button" aria-label="关闭">×</button>
+    <button class="portfolio-lightbox__prev" type="button" aria-label="上一页">‹</button>
+    <img class="portfolio-lightbox__img" src="" alt="">
+    <button class="portfolio-lightbox__next" type="button" aria-label="下一页">›</button>
+    <div class="portfolio-lightbox__caption"></div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var lightbox = document.getElementById('portfolio-lightbox');
+    if (!lightbox) return;
+    var imgEl = lightbox.querySelector('.portfolio-lightbox__img');
+    var captionEl = lightbox.querySelector('.portfolio-lightbox__caption');
+    var btnClose = lightbox.querySelector('.portfolio-lightbox__close');
+    var btnPrev = lightbox.querySelector('.portfolio-lightbox__prev');
+    var btnNext = lightbox.querySelector('.portfolio-lightbox__next');
+    var currentPrefix = '';
+    var currentIndex = 1;
+    var currentCount = 0;
+    var currentLabel = '';
+
+    function pad3(n) {
+      return String(n).padStart(3, '0');
+    }
+
+    function openLightbox(prefix, index, count, label) {
+      currentPrefix = prefix;
+      currentIndex = index;
+      currentCount = count;
+      currentLabel = label;
+      imgEl.src = '{{ base_path }}/images/portfolio/pages/' + prefix + '-' + pad3(index) + '.jpg';
+      imgEl.alt = label + ' 第 ' + index + ' 页';
+      captionEl.textContent = label + ' 第 ' + index + ' / ' + count + ' 页';
+      lightbox.classList.add('is-open');
+      lightbox.setAttribute('aria-hidden', 'false');
+    }
+
+    function move(delta) {
+      var next = currentIndex + delta;
+      if (next < 1) next = 1;
+      if (next > currentCount) next = currentCount;
+      openLightbox(currentPrefix, next, currentCount, currentLabel);
+    }
+
+    document.querySelectorAll('.portfolio-gallery__item').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var prefix = btn.getAttribute('data-prefix');
+        var index = Number(btn.getAttribute('data-index'));
+        var label = btn.closest('.portfolio-gallery').querySelector('.portfolio-gallery__title').textContent;
+        var count = btn.closest('.portfolio-gallery').querySelectorAll('.portfolio-gallery__item').length;
+        openLightbox(prefix, index, count, label);
+      });
+    });
+
+    btnClose.addEventListener('click', function () {
+      lightbox.classList.remove('is-open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      imgEl.src = '';
+    });
+
+    btnPrev.addEventListener('click', function () { move(-1); });
+    btnNext.addEventListener('click', function () { move(1); });
+
+    lightbox.addEventListener('click', function (e) {
+      if (e.target === lightbox) btnClose.click();
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (!lightbox.classList.contains('is-open')) return;
+      if (e.key === 'Escape') btnClose.click();
+      if (e.key === 'ArrowLeft') move(-1);
+      if (e.key === 'ArrowRight') move(1);
+    });
+  })();
+</script>
